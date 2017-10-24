@@ -3,7 +3,7 @@ This is a Bash script in which Sublime Text is custom installed in Debian 9, wit
 
 - sublime_text_3_build_3143_x64
 
-Last Update: 24/10/2017
+- Last Update: 24/10/2017
 
 
 Installation
