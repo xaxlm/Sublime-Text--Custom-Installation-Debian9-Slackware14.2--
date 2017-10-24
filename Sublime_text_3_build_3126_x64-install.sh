@@ -1,8 +1,8 @@
 #!/bin/bash
-# Ultima actualización: 23/08/2017
+# Ultima actualización: 24/10/2017
 cd /
 # Se descarga Sublimetext3
-wget https://download.sublimetext.com/sublime_text_3_build_3126_x64.tar.bz2
+wget https://download.sublimetext.com/sublime_text_3_build_3143_x64.tar.bz2
 cd /usr/local/
 echo 'Se va a instalar en /usr/local/...'
 read -p "Ingresa el nombre del directorio principal de instalacion, si no existe se creará: " DIRINST
@@ -20,13 +20,13 @@ if [ -d $DIRINST ];
 		cd $DIRINST
 fi
 sleep 2
-mv /sublime_text_3_build_3126_x64.tar.bz2 /usr/local/$DIRINST
-tar jvxf sublime_text_3_build_3126_x64.tar.bz2
+mv /sublime_text_3_build_3143_x64.tar.bz2 /usr/local/$DIRINST
+tar jvxf sublime_text_3_build_3143_x64.tar.bz2
 #App a Menú
 cd /usr/share/applications/
 touch sublime.desktop
 echo '[Desktop Entry]' > sublime.desktop
-echo 'Version=3_build_3126_x64' >> sublime.desktop
+echo 'Version=3_build_3143_x64' >> sublime.desktop
 echo 'Name=Sublime Text 3' >> sublime.desktop
 echo 'Comment=Code Editor' >> sublime.desktop
 echo 'Exec=/usr/local/'$DIRINST'/sublime_text_3/sublime_text' >> sublime.desktop
@@ -67,7 +67,7 @@ chmod 744 remove.sh
 touch README.txt
 echo 'Sublime Text 3' > README.txt
 echo 'Idioma=en_US' >> README.txt
-echo 'Version=3_build_3126' >> README.txt
+echo 'Version=3_build_3143' >> README.txt
 echo 'Arquitectura=x64' >> README.txt
 echo 'Esta es una instalación no invasiva.' >> README.txt
 echo 'Para desinstalar ejecute el fichero remove.sh como root.' >> README.txt
@@ -93,7 +93,7 @@ echo -ne '[=================================>      ](83.30%)\r';sleep 0.2
 echo -ne '[====================================>   ](91.64%)\r';sleep 0.2
 echo -ne '[=======================================>](100.00%)\r';sleep 0.2
 echo -ne '\n'
-rm -rf /usr/local/$DIRINST/sublime_text_3_build_3126_x64.tar.bz2
+rm -rf /usr/local/$DIRINST/sublime_text_3_build_3143_x64.tar.bz2
 if [ -d /home/*/.config/sublime-text-3/ ];
 	then
 		rm -rf /home/*/.config/sublime-text-3/
