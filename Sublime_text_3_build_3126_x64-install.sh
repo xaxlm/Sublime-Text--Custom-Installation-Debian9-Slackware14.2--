@@ -1,5 +1,5 @@
 #!/bin/bash
-# Ultima actualizaciÃ³n: 22/08/2017
+# Ultima actualización: 22/08/2017
 cd /
 # Se descarga Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
